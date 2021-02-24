@@ -18,12 +18,12 @@ export const navData: NavNode = {
                 {
                     id: 'l11',
                     title: 'Inclusion Criteria',
-                    imgSrc: '~/images/PFAPA/inclusion.png'
+                    imgSrc: 'res://images/PFAPA/inclusion.png'
                 },
                 {
                     id: 'l12',
                     title: 'CTPs',
-                    imgSrc: '~/images/PFAPA/ctps.png'
+                    imgSrc: 'res://images/PFAPA/ctps.png'
                 }
             ]
         },
@@ -34,7 +34,7 @@ export const navData: NavNode = {
                 {
                     id: 'st21',
                     title: 'Inclusion Exclusion Criteria',
-                    imgSrc: '~/images/Uveitis/exclusion_inclusion.png'
+                    imgSrc: 'res://images/Uveitis/exclusion_inclusion.png'
                 },
                 {
                     id: 'st22',
@@ -43,12 +43,12 @@ export const navData: NavNode = {
                         {
                             id: 'sl221',
                             title: 'Oral',
-                            imgSrc: '~/images/Uveitis/oral.png'
+                            imgSrc: 'res://images/Uveitis/oral.png'
                         },
                         {
                             id: 'sl222',
                             title: 'Subcutaneous',
-                            imgSrc: '~/images/Uveitis/subcutaneous.png'
+                            imgSrc: 'res://images/Uveitis/subcutaneous.png'
                         }
                     ]
                 },
@@ -59,17 +59,17 @@ export const navData: NavNode = {
                         {
                             id: 'sl231',
                             title: 'Weekly',
-                            imgSrc: '~/images/Uveitis/weekly.png'
+                            imgSrc: 'res://images/Uveitis/weekly.png'
                         },
                         {
                             id: 'Biweekly',
                             title: 'Subcutaneous',
-                            imgSrc: '~/images/Uveitis/biweekly.png'
+                            imgSrc: 'res://images/Uveitis/biweekly.png'
                         },
                         {
                             id: 'sl233',
                             title: 'Infliximab',
-                            imgSrc: '~/images/Uveitis/inflix.png'
+                            imgSrc: 'res://images/Uveitis/inflix.png'
                         }
                     ]
                 }
