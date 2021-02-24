@@ -8,6 +8,7 @@ import { ItemDetailComponent } from "./item/item-detail.component";
 import { NsPath1Component } from "./item/ns-path1.component";
 import { NavDoc1Component, NavDoc2Component, NavDocComponent } from "./item/nav-doc.component";
 import { LeafDocComponent } from "./item/leaf-doc.component";
+import { HomeComponent } from './item/home.component';
 
 @NgModule({
     bootstrap: [
@@ -19,6 +20,7 @@ import { LeafDocComponent } from "./item/leaf-doc.component";
     ],
     declarations: [
         AppComponent,
+        HomeComponent,
         ItemsComponent,
         ItemDetailComponent,
 
