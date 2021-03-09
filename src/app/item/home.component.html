@@ -1,10 +1,26 @@
-<ActionBar title="My App">
-    <StackLayout>
-        <Image src="res://images/CARRA-Logo1.png" height="30"></Image>
-    </StackLayout>
-    
-</ActionBar>
 
-<GridLayout>
-    <Label text="HOME"></Label>
+
+<GridLayout rows="*, 2*" class="page">
+    <GridLayout row="0">
+        <Image src="res://images/CARRA-Logo1.png" class="home-logo"></Image>
+    </GridLayout>
+
+    <ScrollView row="1">
+        <GridLayout columns="*, *" height="500">
+            
+                <StackLayout col="0">
+                    <ng-container *ngFor="let item of itemsLeft">
+                        <Label [text]="item.title" class="item" textWrap="true"></Label>
+                    </ng-container>
+                
+                </StackLayout>
+
+                <StackLayout col="1">
+                    <ng-container *ngFor="let item of itemsRight">
+                        <Label  [text]="item.title" class="item" textWrap="true"></Label>
+                    </ng-container>
+                </StackLayout>
+        
+        </GridLayout>
+    </ScrollView>
 </GridLayout>

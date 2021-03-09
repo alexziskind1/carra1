@@ -11,7 +11,7 @@ import { NavNode } from './nav-data';
 import { HomeComponent } from "./item/home.component";
 
 const routes: Routes = [
-    { path: "", redirectTo: "/navdoc1/root", pathMatch: "full" },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
     { path: "home", component: HomeComponent },
     { path: "items", component: ItemsComponent },
     { path: "item/:id", component: ItemDetailComponent },

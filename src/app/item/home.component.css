@@ -1,0 +1,16 @@
+.home-logo {
+    height: 100;
+}
+
+
+.item {
+    font-size: 16;
+    font-weight: bold;
+    height: 110;
+    border-width: 1;
+    border-color: red;
+    background-color: beige;
+    padding: 15;
+    margin: 5;
+    text-align: center;
+}

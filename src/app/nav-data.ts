@@ -1,11 +1,44 @@
 import { getNodeById } from "@nativescript/core/debugger/dom-node";
 
+
+export type TopLevelCategory = {
+    id: string;
+    title: string;
+};
+
 export type NavNode = {
     id: string;
     title: string;
     imgSrc?: string;
     childNodes?: NavNode[];
 };
+
+export const topLevelCats: TopLevelCategory[] = [
+    {
+        id: '0',
+        title: 'Juvenile Idiopathic Arthritis'
+    },
+    {
+        id: '1',
+        title: 'Periodic Fever Syndromes'
+    },
+    {
+        id: '2',
+        title: 'Systemic Lupus Erythematosus'
+    },
+    {
+        id: '3',
+        title: 'Juvenile Dermatomyositis'
+    },
+    {
+        id: '4',
+        title: 'Vasculitis'
+    },
+    {
+        id: '5',
+        title: 'Scleroderma'
+    }
+];
 
 export const navData: NavNode = {
     id: 'root',
