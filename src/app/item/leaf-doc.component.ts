@@ -11,6 +11,7 @@ export class LeafDocComponent implements OnInit {
 
     curTitle = '';
     imgSrc = '~/images/chart1.png';
+    note = '';
 
     constructor(private route: ActivatedRoute) { }
 
@@ -22,6 +23,8 @@ export class LeafDocComponent implements OnInit {
         const navNode = findNavNodeById(id);
         this.curTitle = navNode.title;
         this.imgSrc = navNode.imgSrc;
+        this.note = navNode.note;
+
         console.log('CURPATH', curPath);
         console.log('ID', id);
 

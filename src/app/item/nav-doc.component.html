@@ -4,9 +4,9 @@
 <GridLayout class="page">
     <ListView [items]="itemsRl">
         <ng-template let-item="item">
-            <StackLayout class="li">
+            <GridLayout class="li">
                 <Label [nsRouterLink]="item.nsRouterLink" [text]="item.navNode.title" textWrap="true"></Label>
-            </StackLayout>
+            </GridLayout>
         </ng-template>
     </ListView>
 </GridLayout>

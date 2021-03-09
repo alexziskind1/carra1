@@ -64,3 +64,10 @@ The imported CSS rules must precede all other types of rules.
     font-size: 16;
     height: 80;
 }
+
+.footnote {
+    color: rgb(55, 94, 119);
+    border-top-color: gray;
+    border-top-width: 1;
+    margin-top: 20;
+}

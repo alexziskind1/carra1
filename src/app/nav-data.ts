@@ -14,6 +14,7 @@ export type NavNode = {
     categoryId?: CategoryId;
     imgSrc?: string;
     childNodes?: NavNode[];
+    note?: string;
 };
 
 export const topLevelCats: TopLevelCategory[] = [
@@ -61,12 +62,14 @@ export const navData: NavNode = {
                 {
                     id: 'l11',
                     title: 'Inclusion Criteria',
-                    imgSrc: 'res://images/PFAPA/inclusion.png'
+                    imgSrc: 'res://images/PFAPA/inclusion.png',
+                    note: 'Amarilyo G, Rothman D, Manthiram K, Edwards KM, Li SC, Marshall GS, Yildirim-Toruner C, Haines K, Ferguson PJ, Lionetti G, Cherian J, Zhao Y, DeLaMora P, Syverson G, Nativ S, Twilt M, Michelow IC, Stepanovskiy Y, Thatayatikom A, Harel L, Akoghlanian S, Tucker L, Marques MC, Srinivasalu H, Propst EJ, Licameli GR, Dedeoglu F, Lapidus S; CARRA PFAPA Consensus Treatment Plan Workgroup. Consensus treatment plans for periodic fever, aphthous stomatitis, pharyngitis and adenitis syndrome (PFAPA): a framework to evaluate treatment responses from the childhood arthritis and rheumatology research alliance (CARRA) PFAPA work group. Pediatr Rheumatol Online J. 2020 Apr 15;18(1):31. doi: 10.1186/s12969-020-00424-x. PMID: 32293478; PMCID: PMC7157990.'
                 },
                 {
                     id: 'l12',
                     title: 'CTPs',
-                    imgSrc: 'res://images/PFAPA/ctps.png'
+                    imgSrc: 'res://images/PFAPA/ctps.png',
+                    note: 'Amarilyo G, Rothman D, Manthiram K, Edwards KM, Li SC, Marshall GS, Yildirim-Toruner C, Haines K, Ferguson PJ, Lionetti G, Cherian J, Zhao Y, DeLaMora P, Syverson G, Nativ S, Twilt M, Michelow IC, Stepanovskiy Y, Thatayatikom A, Harel L, Akoghlanian S, Tucker L, Marques MC, Srinivasalu H, Propst EJ, Licameli GR, Dedeoglu F, Lapidus S; CARRA PFAPA Consensus Treatment Plan Workgroup. Consensus treatment plans for periodic fever, aphthous stomatitis, pharyngitis and adenitis syndrome (PFAPA): a framework to evaluate treatment responses from the childhood arthritis and rheumatology research alliance (CARRA) PFAPA work group. Pediatr Rheumatol Online J. 2020 Apr 15;18(1):31. doi: 10.1186/s12969-020-00424-x. PMID: 32293478; PMCID: PMC7157990.'
                 }
             ]
         },
@@ -78,7 +81,8 @@ export const navData: NavNode = {
                 {
                     id: 'st21',
                     title: 'Inclusion Exclusion Criteria',
-                    imgSrc: 'res://images/Uveitis/exclusion_inclusion.png'
+                    imgSrc: 'res://images/Uveitis/exclusion_inclusion.png',
+                    note: 'Angeles-Han ST, Lo MS, Henderson LA, Lerman MA, Abramson L, Cooper AM, Parsa MF, Zemel LS, Ronis T, Beukelman T, Cox E, Sen HN, Holland GN, Brunner HI, Lasky A, Rabinovich CE; Juvenile Idiopathic Arthritis Disease-Specific and Uveitis Subcommittee of the Childhood Arthritis Rheumatology and Research Alliance. Childhood Arthritis and Rheumatology Research Alliance Consensus Treatment Plans for Juvenile Idiopathic Arthritis-Associated and Idiopathic Chronic Anterior Uveitis. Arthritis Care Res (Hoboken). 2019 Apr;71(4):482-491. doi: 10.1002/acr.23610. PMID: 29806733; PMCID: PMC6261704.'
                 },
                 {
                     id: 'st22',
@@ -87,12 +91,14 @@ export const navData: NavNode = {
                         {
                             id: 'sl221',
                             title: 'Oral',
-                            imgSrc: 'res://images/Uveitis/oral.png'
+                            imgSrc: 'res://images/Uveitis/oral.png',
+                            note: 'Angeles-Han ST, Lo MS, Henderson LA, Lerman MA, Abramson L, Cooper AM, Parsa MF, Zemel LS, Ronis T, Beukelman T, Cox E, Sen HN, Holland GN, Brunner HI, Lasky A, Rabinovich CE; Juvenile Idiopathic Arthritis Disease-Specific and Uveitis Subcommittee of the Childhood Arthritis Rheumatology and Research Alliance. Childhood Arthritis and Rheumatology Research Alliance Consensus Treatment Plans for Juvenile Idiopathic Arthritis-Associated and Idiopathic Chronic Anterior Uveitis. Arthritis Care Res (Hoboken). 2019 Apr;71(4):482-491. doi: 10.1002/acr.23610. PMID: 29806733; PMCID: PMC6261704.'
                         },
                         {
                             id: 'sl222',
                             title: 'Subcutaneous',
-                            imgSrc: 'res://images/Uveitis/subcutaneous.png'
+                            imgSrc: 'res://images/Uveitis/subcutaneous.png',
+                            note: 'Angeles-Han ST, Lo MS, Henderson LA, Lerman MA, Abramson L, Cooper AM, Parsa MF, Zemel LS, Ronis T, Beukelman T, Cox E, Sen HN, Holland GN, Brunner HI, Lasky A, Rabinovich CE; Juvenile Idiopathic Arthritis Disease-Specific and Uveitis Subcommittee of the Childhood Arthritis Rheumatology and Research Alliance. Childhood Arthritis and Rheumatology Research Alliance Consensus Treatment Plans for Juvenile Idiopathic Arthritis-Associated and Idiopathic Chronic Anterior Uveitis. Arthritis Care Res (Hoboken). 2019 Apr;71(4):482-491. doi: 10.1002/acr.23610. PMID: 29806733; PMCID: PMC6261704.'
                         }
                     ]
                 },
@@ -103,17 +109,20 @@ export const navData: NavNode = {
                         {
                             id: 'sl231',
                             title: 'Weekly',
-                            imgSrc: 'res://images/Uveitis/weekly.png'
+                            imgSrc: 'res://images/Uveitis/weekly.png',
+                            note: 'Angeles-Han ST, Lo MS, Henderson LA, Lerman MA, Abramson L, Cooper AM, Parsa MF, Zemel LS, Ronis T, Beukelman T, Cox E, Sen HN, Holland GN, Brunner HI, Lasky A, Rabinovich CE; Juvenile Idiopathic Arthritis Disease-Specific and Uveitis Subcommittee of the Childhood Arthritis Rheumatology and Research Alliance. Childhood Arthritis and Rheumatology Research Alliance Consensus Treatment Plans for Juvenile Idiopathic Arthritis-Associated and Idiopathic Chronic Anterior Uveitis. Arthritis Care Res (Hoboken). 2019 Apr;71(4):482-491. doi: 10.1002/acr.23610. PMID: 29806733; PMCID: PMC6261704.'
                         },
                         {
                             id: 'Biweekly',
                             title: 'Subcutaneous',
-                            imgSrc: 'res://images/Uveitis/biweekly.png'
+                            imgSrc: 'res://images/Uveitis/biweekly.png',
+                            note: 'Angeles-Han ST, Lo MS, Henderson LA, Lerman MA, Abramson L, Cooper AM, Parsa MF, Zemel LS, Ronis T, Beukelman T, Cox E, Sen HN, Holland GN, Brunner HI, Lasky A, Rabinovich CE; Juvenile Idiopathic Arthritis Disease-Specific and Uveitis Subcommittee of the Childhood Arthritis Rheumatology and Research Alliance. Childhood Arthritis and Rheumatology Research Alliance Consensus Treatment Plans for Juvenile Idiopathic Arthritis-Associated and Idiopathic Chronic Anterior Uveitis. Arthritis Care Res (Hoboken). 2019 Apr;71(4):482-491. doi: 10.1002/acr.23610. PMID: 29806733; PMCID: PMC6261704.'
                         },
                         {
                             id: 'sl233',
                             title: 'Infliximab',
-                            imgSrc: 'res://images/Uveitis/inflix.png'
+                            imgSrc: 'res://images/Uveitis/inflix.png',
+                            note: 'Angeles-Han ST, Lo MS, Henderson LA, Lerman MA, Abramson L, Cooper AM, Parsa MF, Zemel LS, Ronis T, Beukelman T, Cox E, Sen HN, Holland GN, Brunner HI, Lasky A, Rabinovich CE; Juvenile Idiopathic Arthritis Disease-Specific and Uveitis Subcommittee of the Childhood Arthritis Rheumatology and Research Alliance. Childhood Arthritis and Rheumatology Research Alliance Consensus Treatment Plans for Juvenile Idiopathic Arthritis-Associated and Idiopathic Chronic Anterior Uveitis. Arthritis Care Res (Hoboken). 2019 Apr;71(4):482-491. doi: 10.1002/acr.23610. PMID: 29806733; PMCID: PMC6261704.'
                         }
                     ]
                 }
