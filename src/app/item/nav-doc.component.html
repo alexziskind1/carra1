@@ -1,11 +1,11 @@
 <ActionBar [title]="curTitle">
 </ActionBar>
 
-<GridLayout>
+<GridLayout class="page">
     <ListView [items]="itemsRl">
         <ng-template let-item="item">
-            <StackLayout>
-                <Label [nsRouterLink]="item.nsRouterLink" [text]="item.navNode.title"></Label>
+            <StackLayout class="li">
+                <Label [nsRouterLink]="item.nsRouterLink" [text]="item.navNode.title" textWrap="true"></Label>
             </StackLayout>
         </ng-template>
     </ListView>

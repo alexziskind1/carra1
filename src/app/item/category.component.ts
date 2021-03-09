@@ -13,7 +13,9 @@ import { NavNode, navData, findNavNodeById, findNavNodeByCategoryId, findCategor
 export class CategoryComponent implements OnInit {
 
     curTitle = '';
+    bgColorClass= 'bg5';
     items: NavNode[] = [];
+
 
     constructor(private route: ActivatedRoute, private router: RouterExtensions) {
     }
@@ -28,11 +30,13 @@ export class CategoryComponent implements OnInit {
         const category = findCategoryById(catId);
 
         const navNode = findNavNodeByCategoryId(catId);
-        this.items.push(navNode);
 
-
+        if (navNode) {
+            this.items.push(navNode);
+        }
 
         this.curTitle = category.title;
+        this.bgColorClass = category.bgClass;
         console.log('CUR CAT', this.curTitle);
         console.log('ID', catId);
 

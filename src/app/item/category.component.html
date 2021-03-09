@@ -1,22 +1,22 @@
-<ActionBar>
-    <StackLayout>
+<ActionBar class="action-bar" backgroundColor="#ffffff">
+    <StackLayout  class="action-bar">
         <Image src="res://images/CARRA-Logo1.png" height="30"></Image>
     </StackLayout>
 </ActionBar>
 
 
 
-<GridLayout rows="*, 2*" class="page">
-    <GridLayout row="0">
+<GridLayout rows="*, 2*">
+    <GridLayout row="0" [class]="bgColorClass">
         <Label [text]="curTitle" class="category-title" textWrap="true"></Label>
     </GridLayout>
 
-    <ScrollView row="1">
+    <ScrollView row="1" class="page">
  
             <ListView [items]="items" (itemTap)="onItemTap($event)" >
                 <ng-template let-item="item">
-                    <StackLayout>
-                        <Label [text]="item.title"></Label>
+                    <StackLayout class="li">
+                        <Label [text]="item.title" textWrap="true"></Label>
                     </StackLayout>
                 </ng-template>
             </ListView>

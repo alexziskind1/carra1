@@ -1,6 +1,10 @@
 <ActionBar [title]="curTitle">
 </ActionBar>
 
-<StackLayout>
-    <Image [src]="imgSrc"></Image>
-</StackLayout>
+<GridLayout class="page">
+    <ScrollView>
+        <StackLayout>
+            <Image [src]="imgSrc" height="500"></Image>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>

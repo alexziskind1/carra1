@@ -10,13 +10,17 @@
             
                 <StackLayout col="0">
                     <ng-container *ngFor="let item of itemsLeft">
-                        <Label [text]="item.title" class="item" textWrap="true" (tap)="onItemTap(item.id)"></Label>
+                        <GridLayout class="item-wrapper" [class]="item.bgClass" (tap)="onItemTap(item.id)">
+                            <Label [text]="item.title" class="item" textWrap="true"></Label>
+                        </GridLayout>
                     </ng-container>
                 </StackLayout>
 
                 <StackLayout col="1">
                     <ng-container *ngFor="let item of itemsRight">
-                        <Label  [text]="item.title" class="item" textWrap="true" (tap)="onItemTap(item.id)"></Label>
+                        <GridLayout class="item-wrapper"  [class]="item.bgClass"  (tap)="onItemTap(item.id)">
+                            <Label  [text]="item.title" class="item" textWrap="true"></Label>
+                        </GridLayout>
                     </ng-container>
                 </StackLayout>
         

@@ -5,6 +5,7 @@ export type CategoryId = string;
 export type TopLevelCategory = {
     id: CategoryId;
     title: string;
+    bgClass: string;
 };
 
 export type NavNode = {
@@ -18,27 +19,33 @@ export type NavNode = {
 export const topLevelCats: TopLevelCategory[] = [
     {
         id: '0',
-        title: 'Juvenile Idiopathic Arthritis'
+        title: 'Juvenile Idiopathic Arthritis',
+        bgClass: 'bg1'
     },
     {
         id: '1',
-        title: 'Periodic Fever Syndromes'
+        title: 'Periodic Fever Syndromes',
+        bgClass: 'bg2'
     },
     {
         id: '2',
-        title: 'Systemic Lupus Erythematosus'
+        title: 'Systemic Lupus Erythematosus',
+        bgClass: 'bg3'
     },
     {
         id: '3',
-        title: 'Juvenile Dermatomyositis'
+        title: 'Juvenile Dermatomyositis',
+        bgClass: 'bg4'
     },
     {
         id: '4',
-        title: 'Vasculitis'
+        title: 'Vasculitis',
+        bgClass: 'bg5'
     },
     {
         id: '5',
-        title: 'Scleroderma'
+        title: 'Scleroderma',
+        bgClass: 'bg6'
     }
 ];
 
