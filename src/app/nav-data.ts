@@ -1,14 +1,16 @@
 import { getNodeById } from "@nativescript/core/debugger/dom-node";
 
+export type CategoryId = string;
 
 export type TopLevelCategory = {
-    id: string;
+    id: CategoryId;
     title: string;
 };
 
 export type NavNode = {
     id: string;
     title: string;
+    categoryId?: CategoryId;
     imgSrc?: string;
     childNodes?: NavNode[];
 };
@@ -47,6 +49,7 @@ export const navData: NavNode = {
         {
             id: 't1',
             title: 'PFAPA',
+            categoryId: '1',
             childNodes: [
                 {
                     id: 'l11',
@@ -63,6 +66,7 @@ export const navData: NavNode = {
         {
             id: 't2',
             title: 'JIA - Associated & Idiopathic Chronic Anterior Uveitis',
+            categoryId: '0',
             childNodes: [
                 {
                     id: 'st21',
@@ -125,6 +129,32 @@ function getMatchNode(id: string, n: NavNode): NavNode {
     }
 }
 
+function getMatchCategoryNode(catId: string, n: NavNode): NavNode {
+    if (n.categoryId && n.categoryId === catId) {
+        return n;
+    }
+    if (n.childNodes && n.childNodes.length > 0) {
+        for (let i = 0; i < n.childNodes.length; i++) {
+            const rn = getMatchCategoryNode(catId, n.childNodes[i]);
+            if (rn) {
+                return rn;
+            }
+        }
+    }
+}
+
 export function findNavNodeById(id: string): NavNode {
     return getMatchNode(id, navData);
+}
+
+export function findNavNodeByCategoryId(catId: string): NavNode {
+    return getMatchCategoryNode(catId, navData);
+}
+
+export function findCategoryById(catId: string): TopLevelCategory {
+    for (let i = 0; i < topLevelCats.length; i++) {
+        if (topLevelCats[i].id === catId) {
+            return topLevelCats[i];
+        }
+    }
 }

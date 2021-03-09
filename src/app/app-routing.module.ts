@@ -9,6 +9,7 @@ import { NavDoc1Component, NavDoc2Component, NavDocComponent } from './item/nav-
 import { LeafDocComponent } from './item/leaf-doc.component';
 import { NavNode } from './nav-data';
 import { HomeComponent } from "./item/home.component";
+import { CategoryComponent } from "./item/category.component";
 
 const routes: Routes = [
     { path: "", redirectTo: "/home", pathMatch: "full" },
@@ -16,6 +17,7 @@ const routes: Routes = [
     { path: "items", component: ItemsComponent },
     { path: "item/:id", component: ItemDetailComponent },
     { path: "path1/p1", component: NsPath1Component },
+    { path: "category/:catId", component: CategoryComponent },
     { path: "navdoc1/:id", component: NavDoc1Component },
     { path: "navdoc2/:id", component: NavDoc2Component },
     { path: "leafdoc/:id", component: LeafDocComponent },

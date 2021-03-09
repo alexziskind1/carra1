@@ -1,0 +1,25 @@
+<ActionBar>
+    <StackLayout>
+        <Image src="res://images/CARRA-Logo1.png" height="30"></Image>
+    </StackLayout>
+</ActionBar>
+
+
+
+<GridLayout rows="*, 2*" class="page">
+    <GridLayout row="0">
+        <Label [text]="curTitle" class="category-title" textWrap="true"></Label>
+    </GridLayout>
+
+    <ScrollView row="1">
+ 
+            <ListView [items]="items" (itemTap)="onItemTap($event)" >
+                <ng-template let-item="item">
+                    <StackLayout>
+                        <Label [text]="item.title"></Label>
+                    </StackLayout>
+                </ng-template>
+            </ListView>
+
+    </ScrollView>
+</GridLayout>
